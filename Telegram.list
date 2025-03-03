@@ -29,7 +29,6 @@ DOMAIN-SUFFIX,tg.dev
 DOMAIN-SUFFIX,tx.me
 DOMAIN-SUFFIX,usercontent.dev
 DOMAIN-SUFFIX,walletbot.me
-DOMAIN-KEYWORD,nicegram
 DOMAIN-KEYWORD,telegram
 IP-CIDR,149.154.160.0/20,no-resolve
 IP-CIDR,185.76.151.0/24,no-resolve
