@@ -1,12 +1,8 @@
-# 名称: MihomoPro高大全 V3.2
-# 日期: 2025年2月24日
-# 地址: https://github.com/666OS
-# 频道: https://t.me/Pinched666
 # 注意：在proxy-providers加入您的机场订阅链接（锚点区结束后面）
 
 ############################################## - ⚓️ 锚点区开始 - ##############################################
 # 锚点 - 远程订阅组
-PProviders: &PProviders {type: http, interval: 21600, health-check: {enable: true, url: 'http://cp.cloudflare.com/generate_204', interval: 300}, filter: '^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'}
+PProviders: &PProviders {type: http， interval: 21600， health-check: {enable: true， url: 'http://cp.cloudflare.com/generate_204'， interval: 300}， filter: '^(?!.*(群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'}
 # 锚点 - 筛选组 
 FilterHK: &FilterHK '(?i)港|香港|🇭🇰|HK|Hong|HKG'
 FilterTW: &FilterTW '(?i)台|台湾|🇼🇸|🇹🇼|TW|tai|TPE|TSA|KHH'
@@ -18,32 +14,32 @@ FilterEU: &FilterEU '(?i)(🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|
 FilterOther: &FilterOther '^(?!.*(直连|港|台|新|日|韩|香港|台湾|新加坡|日本|韩国|美国|🇭🇰|🇼🇸|🇹🇼|🇸🇬|🇯🇵|🇰🇷|🇺🇸|🇬🇧|🇦🇹|🇧🇪|🇨🇿|🇩🇰|🇫🇮|🇫🇷|🇩🇪|🇮🇪|🇮🇹|🇱🇹|🇱🇺|🇳🇱|🇵🇱|🇸🇪|HK|TW|SG|JP|KR|US|GB|CDG|FRA|AMS|MAD|BCN|FCO|MUC|BRU|HKG|TPE|TSA|KHH|SIN|XSP|NRT|HND|KIX|CTS|FUK|JFK|LAX|ORD|ATL|DFW|SFO|MIA|SEA|IAD|LHR|LGW))'
 FilterAll: &FilterAll '^(?!.*(直连|群|邀请|返利|循环|官网|客服|网站|网址|获取|订阅|流量|到期|机场|下次|版本|官址|备用|过期|已用|联系|邮箱|工单|贩卖|通知|倒卖|防止|国内|地址|频道|无法|说明|使用|提示|特别|访问|支持|教程|关注|更新|作者|加入|USE|USED|TOTAL|EXPIRE|EMAIL|Panel|Channel|Author))'
 # 锚点 - 策略组
-UrlTest: &UrlTest {type: url-test, interval: 60, tolerance: 2, lazy: true, url: 'http://cp.cloudflare.com/generate_204', disable-udp: false, timeout: 5000, max-failed-times: 3, hidden: true, include-all: true}
-FallBack: &FallBack {type: fallback, interval: 60, lazy: true, url: 'http://cp.cloudflare.com/generate_204', disable-udp: false, timeout: 5000, max-failed-times: 3, hidden: false}
-LoadBalanceCH: &LoadBalanceCH {type: load-balance, interval: 60, lazy: true, url: 'http://cp.cloudflare.com/generate_204', disable-udp: false, strategy: consistent-hashing, timeout: 5000, max-failed-times: 3, hidden: true, include-all: true}
-LoadBalanceCR: &LoadBalanceCR {type: load-balance, interval: 60, lazy: true, url: 'http://cp.cloudflare.com/generate_204', disable-udp: false, strategy: round-robin, timeout: 5000, max-failed-times: 3, hidden: true, include-all: true}
+UrlTest: &UrlTest {type: url-test， interval: 60， tolerance: 2， lazy: true， url: 'http://cp.cloudflare.com/generate_204'， disable-udp: false， timeout: 5000， max-failed-times: 3， hidden: true， include-all: true}
+FallBack: &FallBack {type: fallback， interval: 60， lazy: true， url: 'http://cp.cloudflare.com/generate_204'， disable-udp: false， timeout: 5000， max-failed-times: 3， hidden: false}
+LoadBalanceCH: &LoadBalanceCH {type: load-balance， interval: 60， lazy: true， url: 'http://cp.cloudflare.com/generate_204'， disable-udp: false， strategy: consistent-hashing， timeout: 5000， max-failed-times: 3， hidden: true， include-all: true}
+LoadBalanceCR: &LoadBalanceCR {type: load-balance， interval: 60， lazy: true， url: 'http://cp.cloudflare.com/generate_204'， disable-udp: false， strategy: round-robin， timeout: 5000， max-failed-times: 3， hidden: true， include-all: true}
 
 # 锚点 - 选择组 
-SelectFB: &SelectFB {type: select, proxies: [故障转移, 香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 冷门自选, 全球手动, 直连]}
-SelectHK: &SelectHK {type: select, proxies: [香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 冷门自选, 全球手动, 直连]}
-SelectSG: &SelectSG {type: select, proxies: [新加坡策略, 故障转移, 香港策略, 台湾策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 冷门自选, 全球手动, 直连]}
-SelectUS: &SelectUS {type: select, proxies: [美国策略, 故障转移, 香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 欧盟策略, 冷门自选, 全球手动, 直连]}
-SelectProxy: &SelectProxy {type: select, proxies: [默认代理, 故障转移, 香港策略, 台湾策略, 新加坡策略, 日本策略, 韩国策略, 美国策略, 欧盟策略, 冷门自选, 全球手动, 直连]}
+SelectFB: &SelectFB {type: select， proxies: [故障转移， 香港策略， 台湾策略， 新加坡策略， 日本策略， 韩国策略， 美国策略， 欧盟策略， 冷门自选， 全球手动， 直连]}
+SelectHK: &SelectHK {type: select， proxies: [香港策略， 台湾策略， 新加坡策略， 日本策略， 韩国策略， 美国策略， 欧盟策略， 冷门自选， 全球手动， 直连]}
+SelectSG: &SelectSG {type: select， proxies: [新加坡策略， 故障转移， 香港策略， 台湾策略， 日本策略， 韩国策略， 美国策略， 欧盟策略， 冷门自选， 全球手动， 直连]}
+SelectUS: &SelectUS {type: select， proxies: [美国策略， 故障转移， 香港策略， 台湾策略， 新加坡策略， 日本策略， 韩国策略， 欧盟策略， 冷门自选， 全球手动， 直连]}
+SelectProxy: &SelectProxy {type: select， proxies: [默认代理， 故障转移， 香港策略， 台湾策略， 新加坡策略， 日本策略， 韩国策略， 美国策略， 欧盟策略， 冷门自选， 全球手动， 直连]}
 # 锚点 - 规则集 
-DomainMrs: &DomainMrs {type: http, interval: 43200, behavior: domain, format: mrs}
-DomainText: &DomainText {type: http, interval: 43200, behavior: domain, format: text}
-domainYaml: &domainYaml {type: http, interval: 43200, behavior: domain, format: yaml}
-IPcidrMrs: &IPcidrMrs {type: http, interval: 43200, behavior: ipcidr, format: mrs}
-IPcidrText: &IPcidrText {type: http, interval: 43200, behavior: ipcidr, format: text}
-ClassicalText: &ClassicalText {type: http, interval: 43200, behavior: classical, format: text}
-ClassicalYaml: &ClassicalYaml {type: http, interval: 43200, behavior: classical, format: yaml}
+DomainMrs: &DomainMrs {type: http， interval: 43200， behavior: domain， format: mrs}
+DomainText: &DomainText {type: http， interval: 43200， behavior: domain， format: text}
+domainYaml: &domainYaml {type: http， interval: 43200， behavior: domain， format: yaml}
+IPcidrMrs: &IPcidrMrs {type: http， interval: 43200， behavior: ipcidr， format: mrs}
+IPcidrText: &IPcidrText {type: http， interval: 43200， behavior: ipcidr， format: text}
+ClassicalText: &ClassicalText {type: http， interval: 43200， behavior: classical， format: text}
+ClassicalYaml: &ClassicalYaml {type: http， interval: 43200， behavior: classical， format: yaml}
 ############################################## - ⚓️ 锚点区结束 - ############################################## 
 
 # 远程订阅组
-# 注意：请提供您的机场订阅链接，每个链接一行，并为每个机场命名，末尾的[A]为每个节点添加机场名称前缀，可自定义
+# 注意：请提供您的机场订阅链接，每个链接一行，并为每个机场命名，末尾的[机场名]为每个节点添加机场名称前缀，可自定义
 proxy-providers:
-  机场A: {<<: *PProviders, url: '订阅链接', override: {additional-prefix: '[机场名] '}}
-  机场B: {<<: *PProviders, url: '订阅链接', override: {additional-prefix: '[机场名] '}}
+  机场A: {<<: *PProviders， url: '订阅链接'， override: {additional-prefix: '[机场名] '}}
+  机场B: {<<: *PProviders， url: '订阅链接'， override: {additional-prefix: '[机场名] '}}
 
 # 全局配置
 port: 7890
@@ -84,12 +80,12 @@ sniffer:
   enable: true
   sniff:
     HTTP:
-      ports: [80, 8080-8880]
+      ports: [80， 8080-8880]
       override-destination: true
     TLS:
-      ports: [443, 8443]
+      ports: [443， 8443]
     QUIC:
-      ports: [443, 8443]
+      ports: [443， 8443]
   skip-domain: # 忽略嗅探
     - 'rule-set:cn_domain,private_domain'
     - 'Mijia Cloud'
