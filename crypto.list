@@ -279,6 +279,7 @@ DOMAIN-SUFFIX,trustwalletapp.com
   # Gate
 DOMAIN-SUFFIX,gate.ac
 DOMAIN-SUFFIX,gate.io
+DOMAIN-KEYWORD,gateio
 
   # Mexc
 DOMAIN-SUFFIX,mexc.com
