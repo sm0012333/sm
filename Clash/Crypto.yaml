@@ -313,6 +313,7 @@ payload:
   - DOMAIN-SUFFIX,unisat.io
 
   # Other
+  - DOMAIN-SUFFIX,ave.ai
   - DOMAIN-SUFFIX,bybit.biz
   - DOMAIN-KEYWORD,bybit
   - DOMAIN-KEYWORD,debox
