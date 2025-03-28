@@ -313,14 +313,9 @@ payload:
   - DOMAIN-SUFFIX,unisat.io
 
   # Other
-  - DOMAIN-KEYWORD,ave.ai
   - DOMAIN-SUFFIX,bybit.biz
   - DOMAIN-KEYWORD,bybit
   - DOMAIN-KEYWORD,debox
   - DOMAIN-KEYWORD,moonshot
-  - DOMAIN-KEYWORD,universal
   - DOMAIN-KEYWORD,particle
   - DOMAIN-KEYWORD,btse
-  - DOMAIN-KEYWORD,xxyy.io
-  - DOMAIN-KEYWORD,universal
-  - DOMAIN-KEYWORD,debot.ai
