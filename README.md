@@ -1,4 +1,4 @@
-小白请通过tg私信bot联系我解惑 'https://t.me/sm00123bot'
+小白请通过tg私信bot联系我解惑 'https://t.me/sm00123_Bot'
 
 修改自'高大全666'
 
