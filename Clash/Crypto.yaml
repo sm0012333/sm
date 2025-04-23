@@ -283,6 +283,7 @@ payload:
   # Gate
   - DOMAIN-SUFFIX,gate.ac
   - DOMAIN-SUFFIX,gate.io
+  - DOMAIN-KEYWORD,gateio
 
   # Mexc
   - DOMAIN-SUFFIX,mexc.com
@@ -313,9 +314,14 @@ payload:
   - DOMAIN-SUFFIX,unisat.io
 
   # Other
-  - DOMAIN-SUFFIX,bybit.biz
+  - DOMAIN-KEYWORD,ave.ai
   - DOMAIN-KEYWORD,bybit
   - DOMAIN-KEYWORD,debox
   - DOMAIN-KEYWORD,moonshot
+  - DOMAIN-KEYWORD,universal
   - DOMAIN-KEYWORD,particle
   - DOMAIN-KEYWORD,btse
+  - DOMAIN-KEYWORD,xxyy.io
+  - DOMAIN-KEYWORD,universal
+  - DOMAIN-KEYWORD,debot.ai
+  - DOMAIN-KEYWORD,gmgn.ai
