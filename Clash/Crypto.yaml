@@ -272,6 +272,7 @@ payload:
   - DOMAIN-SUFFIX,1ml.com
 
   # Token
+  - DOMAIN-SUFFIX,mytokenpocket.vip
   - DOMAIN-SUFFIX,tokenpocket.pro
   - DOMAIN-SUFFIX,token.im
   - DOMAIN-SUFFIX,phantom.app
