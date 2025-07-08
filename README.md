@@ -8,6 +8,6 @@
 
 Crypto使用我自己收录的，增加更多详细规则，更完善
 
-更换测延迟链接为 'http://cp.cloudflare.com/generate_204'
+更换测延迟链接为 'https://www.gstatic.com/generate_204'
 
 其他完善修改调整地方，自行网上比对文件差异，不再赘述
