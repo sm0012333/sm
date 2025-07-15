@@ -216,6 +216,7 @@ payload:
 - DOMAIN-SUFFIX,bitnodes.earn.com
 - DOMAIN-SUFFIX,blockchain.com
 - DOMAIN-SUFFIX,blockchair.com
+- DOMAIN-SUFFIX,binance.info
 
 - DOMAIN-KEYWORD,binance
 - DOMAIN-KEYWORD,huobi
