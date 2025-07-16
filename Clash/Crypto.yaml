@@ -216,11 +216,7 @@ payload:
 - DOMAIN-SUFFIX,bitnodes.earn.com
 - DOMAIN-SUFFIX,blockchain.com
 - DOMAIN-SUFFIX,blockchair.com
-- DOMAIN-SUFFIX,binance.info
 
-- DOMAIN-KEYWORD,bnappweb.biz
-- DOMAIN-KEYWORD,binance.info
-- DOMAIN-KEYWORD,binance
 - DOMAIN-KEYWORD,huobi
 - DOMAIN-KEYWORD,metamask
 - DOMAIN-KEYWORD,okx
@@ -237,6 +233,5 @@ payload:
 - DOMAIN-KEYWORD,debot.ai
 - DOMAIN-KEYWORD,gmgn.ai
 
-- PROCESS-NAME,Binance.exe
 - PROCESS-NAME,Huobi.exe
 - PROCESS-NAME,OKX.exe
