@@ -218,6 +218,7 @@ payload:
 - DOMAIN-SUFFIX,blockchair.com
 - DOMAIN-SUFFIX,binance.info
 
+- DOMAIN-KEYWORD,bnappweb.biz
 - DOMAIN-KEYWORD,binance.info
 - DOMAIN-KEYWORD,binance
 - DOMAIN-KEYWORD,huobi
