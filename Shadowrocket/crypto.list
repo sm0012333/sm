@@ -33,11 +33,6 @@ DOMAIN-SUFFIX,poly.network
 DOMAIN-SUFFIX,zkscan.io
 DOMAIN-SUFFIX,zksync.io
 DOMAIN-SUFFIX,boba.network
-DOMAIN-SUFFIX,bnappzh.co
-DOMAIN-SUFFIX,bnappzh.com
-DOMAIN-SUFFIX,bnbstatic.com
-DOMAIN-SUFFIX,bntrace.com
-DOMAIN-SUFFIX,bnappzh.mobi
 DOMAIN-SUFFIX,bsc.getblock.io
 DOMAIN-SUFFIX,bscscan.com
 DOMAIN-SUFFIX,hbabit.com
@@ -215,10 +210,7 @@ DOMAIN-SUFFIX,bitsquare.io
 DOMAIN-SUFFIX,bitnodes.earn.com
 DOMAIN-SUFFIX,blockchain.com
 DOMAIN-SUFFIX,blockchair.com
-DOMAIN-SUFFIX,binance.info
 
-DOMAIN-KEYWORD,bnappweb.biz
-DOMAIN-KEYWORD,binance
 DOMAIN-KEYWORD,huobi
 DOMAIN-KEYWORD,metamask
 DOMAIN-KEYWORD,okx
@@ -235,6 +227,5 @@ DOMAIN-KEYWORD,xxyy.io
 DOMAIN-KEYWORD,debot.ai
 DOMAIN-KEYWORD,gmgn.ai
 
-PROCESS-NAME,Binance.exe
 PROCESS-NAME,Huobi.exe
 PROCESS-NAME,OKX.exe
